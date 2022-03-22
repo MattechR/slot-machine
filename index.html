@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Lucky 7 - Slot Machine</title>
+  </head>
+  <body>
+    <div
+      id="bg"
+      class="bg-color"
+      style="background-color: transparent !important"
+    >
+      <div class="container">
+        <div class="slot-machine">
+          <h1>Lucky 7 - Slot Machine</h1>
+          <div class="slot-machine-icon">
+            <div class="slot-machine-icon" id="slot1">&nbsp;</div>
+            <div class="slot-machine-icon" id="slot2">&nbsp;</div>
+            <div class="slot-machine-icon" id="slot3">&nbsp;</div>
+          </div>
+          <div>
+            <button id="btn" class="lever-btn" onclick="spin()"></button>
+          </div>
+          <div id="message">Jack Pot!</div>
+        </div>
+        <audio id="game" src="/mp3/game.mp3" type="audio/mpeg"></audio>
+        <audio id="cash" src="/mp3/cash.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </body>
+</html>

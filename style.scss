@@ -1,0 +1,94 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.bg-color {
+  animation: 10000ms ease-in-out infinite color-change;
+  padding-block-end: 20%;
+
+  @keyframes color-change {
+    0% {
+      background-color: teal;
+    }
+    20% {
+      background-color: gold;
+    }
+    40% {
+      background-color: indianred;
+    }
+    60% {
+      background-color: violet;
+    }
+    80% {
+      background-color: green;
+    }
+    100% {
+      background-color: teal;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: monospace;
+    max-height: 100%;
+  }
+  .slot-machine {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    &-icon {
+      display: flex;
+      justify-content: center;
+      margin-block-start: -10%;
+      font-size: 2rem;
+      padding: 18%;
+      font-size: 3rem;
+    }
+  }
+  #slot1 {
+    border: 10px groove;
+    border-radius: 20px;
+  }
+  #slot2 {
+    border: 10px groove;
+    border-radius: 20px;
+  }
+  #slot3 {
+    border: 10px groove;
+    border-radius: 20px;
+  }
+
+  .lever {
+    margin-block-start: 10%;
+    margin-block-end: -10%;
+    &-btn {
+      display: flex;
+      margin-block-start: -40%;
+      margin-block-end: -15%;
+      margin-inline-start: 105%;
+      border: none;
+      background-image: url(img/SLOT-Machine-handle.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: white;
+      padding-block-end: 38%;
+      padding-inline-start: 10%;
+      cursor: pointer;
+      &:hover {
+        animation: top-to-bottom ease-in forwards;
+      }
+    }
+  }
+  @keyframes top-to-bottom {
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  #message {
+    display: none;
+    font-size: 3rem;
+  }
+}
